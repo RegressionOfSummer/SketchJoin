@@ -236,7 +236,7 @@ int main(int argc,char *argv[]){
 	test_ske(sz,3,CHOOSE);
 	ofstream oFile;
 	char oFilename[50];
-	sprintf(oFilename,"alpha_test.csv",CHOOSE);
+	sprintf(oFilename,"result.csv",CHOOSE);
 	oFile.open(oFilename, ios::app);
 	if (!oFile) return 0;
 	oFile << "Dataset:" << filename << endl;
