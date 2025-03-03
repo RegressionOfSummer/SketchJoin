@@ -48,4 +48,14 @@ You can modify the `Heavy_Thes` in `main.cpp` to adapt to different datasets.
 
 ### Output Format
 
-Our program will print the statistics about the input dataset and the parameters of the candidate algorithms at the command-line interface. Then our program will generate a file `result.csv` containing information such as mean error, variance, max min and throughput.
+Our program will print the statistics about the input dataset and the parameters of the candidate algorithms at the command-line interface. Then our program will generate a file `result.csv` containing information such as mean error, variance, max min and throughput. 
+In the repo we provide several Sketch, including SketchJoin, Count-Min, F-AGMS, Skimmed Sketch, corresponding  `-v` options 0, 1, 2 respectively.
+
+To test SketchJoin, we need to use the above command to get what we need. For experiments related to AE, experiments were conducted by modifying the data set and memory usage. For example, to test AE on CAIDA, use following commond
+
+```bash
+$ ./main -f ../dataset/CAIDA/CAIDA.dat -l 13 -m 16000 -v 0
+```
+In the paper, we use this commond to test AE. We can get result in the file `result.csv`
+
+  
