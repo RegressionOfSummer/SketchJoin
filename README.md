@@ -54,8 +54,9 @@ In the repo we provide several Sketch, including SketchJoin, Count-Min, F-AGMS, 
 To test SketchJoin, we need to use the above command to get what we need. For experiments related to AE, experiments were conducted by modifying the data set and memory usage. For example, to test AE on CAIDA, use following commond
 
 ```bash
-$ ./main -f ../dataset/CAIDA/CAIDA.dat -l 13 -m 16000 -v 0
+$ ./main -f ../dataset/CAIDA/CAIDA.dat -l 13 -m 16000 -v 3
 ```
-In the paper, we use this commond to test AE. We can get result in the file `result.csv`
+we use this commond to test AE and VAR by modifying memory usage. We can get result in the file `result.csv`.
+
 
   
