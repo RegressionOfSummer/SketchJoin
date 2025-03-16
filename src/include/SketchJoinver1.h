@@ -235,8 +235,7 @@ public:
 };
 
 class Classifier:public Sketch
-{
-public:
+{ 
 	int n;const int m=8;
 	struct data{
 		unsigned Id,Key;
